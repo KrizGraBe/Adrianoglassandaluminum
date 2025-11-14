@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adriano Glass and Aluminum Services</title>
+  <meta name="description" content="Glass and aluminum installation and fabrication services based in Tagaytay City, serving Cavite, Laguna, and Batangas.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Adriano Glass & Aluminum</h1>
+    <p>Serving Tagaytay, Cavite, Laguna & Batangas</p>
+  </header>
+
+  <nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>We specialize in high-quality glass and aluminum fabrication and installation, proudly serving Tagaytay City and surrounding provinces.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Adriano Glass and Aluminum is committed to providing durable, stylish, and affordable glass and aluminum solutions for homes and businesses.</p>
+    </section>
+
+<section id="works">
+  <h2>Our Works</h2>
+  <div class="gallery">
+    <img src="work1.jpg" alt="Project 1" />
+    <img src="work2.jpg" alt="Project 2" />
+    <img src="work3.jpg" alt="Project 3" />
+    <img src="work4.jpg" alt="Project 4" />
+  </div>
+</section>
+  
+    <section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 Adriano Glass and Aluminum Services</p>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Back to top">
+  <i class="fas fa-rocket"></i>
+</button>
+<script>
+  // Show/hide button on scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollBtn");
+    btn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+
+  // Scroll to top smoothly
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+  }
+</script>
+</body>
+</html>
+
