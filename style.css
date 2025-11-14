@@ -153,3 +153,10 @@ button {
 #scrollBtn i {
   transform: rotate(0deg); /* upright */
 }
+#contacts p {
+  font-size: 1.1em;
+  color: var(--black);
+  margin: 0.5em 0;
+}
+
+  
